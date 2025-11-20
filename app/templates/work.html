@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Work · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="page-header">
+    <h1>Selected Work</h1>
+    <p>A collection of research-led case studies and thoughtful product concepts.</p>
+</section>
+<section class="cards-grid cards-grid--work">
+    {% for case in case_studies %}
+    <article class="card case-card card--feature">
+        <a href="/work/{{ case.slug }}">
+            <div class="card-accent" aria-hidden="true">
+                <span class="card-accent-triangle"></span>
+            </div>
+            <h3 class="card-title">{{ case.title }}</h3>
+            <p class="meta card-meta">{{ case.role }} · {{ case.year }}</p>
+            <p class="problem card-body">{{ case.problem }}</p>
+            <p class="card-body">{{ case.summary }}</p>
+        </a>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Contact · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="contact">
+    <header class="page-header">
+        <h1>Contact</h1>
+        <p>Let’s talk about thoughtful design, collaborative prototyping, or mentorship.</p>
+    </header>
+    <div class="contact-grid">
+        <form class="contact-form" method="post" action="https://formspree.io/f/xgekrvpd">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send message</button>
+        </form>
+        <aside class="contact-links">
+            <h2>Connect elsewhere</h2>
+            <ul>
+                <li><a href="mailto:hello@anoushka.design">Email</a></li>
+                <li><a href="https://github.com/anoushkar" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/anoushkarathod" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://dribbble.com/anoushkar" target="_blank" rel="noopener">Dribbble</a></li>
+            </ul>
+        </aside>
+    </div>
+</section>
+{% endblock %}

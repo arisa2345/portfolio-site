@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Cursor Orchestra",
+        "description": "A multi-cursor prototype testing collaborative annotations with playful motion.",
+        "link": "https://codepen.io/collection/XYZ"
+    },
+    {
+        "title": "Ambient Weather Glyphs",
+        "description": "SVG glyphs that morph with live weather APIs to test atmospheric UI states.",
+        "link": null
+    },
+    {
+        "title": "Micro-gesture Notations",
+        "description": "A motion study mapping expressive gestures for accessible productivity tools.",
+        "link": null
+    },
+    {
+        "title": "Study Ritual Timer",
+        "description": "A lightweight timer exploring gradients and audio cues for focus sessions.",
+        "link": null
+    }
+]

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}About · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="about">
+    <header class="page-header">
+        <h1>About</h1>
+        <p>Curious interaction designer, methodical researcher, playful storyteller.</p>
+    </header>
+    <div class="about-body">
+        <section class="about-bio">
+            <h2>Meet Anoushka</h2>
+            <p>{{ bio.introduction }}</p>
+        </section>
+        <section class="about-tools">
+            <h2>Tools & Rituals</h2>
+            <ul>
+                {% for tool in bio.tools %}
+                <li>{{ tool }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="about-story">
+            <h2>Journey so far</h2>
+            <p>{{ bio.story }}</p>
+        </section>
+    </div>
+</section>
+{% endblock %}

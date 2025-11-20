@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Experience · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="page-header">
+    <h1>Experience</h1>
+    <p>A timeline of internships, collaborations, and design adventures.</p>
+</section>
+<ul class="timeline">
+    {% for entry in experience %}
+    <li>
+        <span class="timeline-year">{{ entry.year }}</span>
+        <div class="timeline-body">
+            <h2>{{ entry.role }} — {{ entry.place }}</h2>
+            <p>{{ entry.takeaway }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

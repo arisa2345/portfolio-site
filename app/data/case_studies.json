@@ -1,0 +1,109 @@
+[
+    {
+        "slug": "civic-accessibility",
+        "title": "Designing Civic Accessibility Tools",
+        "role": "Lead Researcher & Designer",
+        "year": "2024",
+        "summary": "Helping local governments make public services more approachable through inclusive service design.",
+        "problem": "Residents with disabilities were opting out of city programs due to inaccessible digital touchpoints.",
+        "timeline": "10 weeks",
+        "team": "UX researcher, content strategist, accessibility consultant",
+        "deliverables": "Research synthesis, service blueprint, interactive prototype",
+        "sections": [
+            {
+                "heading": "Overview",
+                "body": "Partnered with the City of Pune to redesign their civic benefits application flow for residents with mixed abilities.",
+                "media": null
+            },
+            {
+                "heading": "Research",
+                "body": "Conducted contextual inquiries, accessibility audits, and diary studies across 12 residents to map friction points.",
+                "media": null
+            },
+            {
+                "heading": "Insights",
+                "body": "Discovered that inconsistent tone and fragmented requests for documents caused anxiety and drop-off.",
+                "media": null
+            },
+            {
+                "heading": "Design Process",
+                "body": "Prototyped a modular eligibility checker with accessible language guidelines and service handoff scripts.",
+                "media": null
+            },
+            {
+                "heading": "Final Solution",
+                "body": "Delivered a responsive prototype with a step-by-step playbook for civic staff.",
+                "media": null
+            }
+        ],
+        "reflection": "Proved that research narrativized with empathy shifts stakeholder priorities faster than metrics alone."
+    },
+    {
+        "slug": "ambient-wellness",
+        "title": "Ambient Wellness Companion",
+        "role": "Product Designer",
+        "year": "2023",
+        "summary": "An ambient interface that helps students build mindful study rituals across their dorm spaces.",
+        "problem": "Scattered routines made it difficult for students to maintain balance between coursework and wellbeing.",
+        "timeline": "6 weeks",
+        "team": "Interaction designer, motion designer",
+        "deliverables": "Experience map, motion studies, coded prototype",
+        "sections": [
+            {
+                "heading": "Context",
+                "body": "Envisioned a dorm-friendly companion that uses ambient light and gentle motion cues.",
+                "media": null
+            },
+            {
+                "heading": "Research",
+                "body": "Shadowed students through their daily routines, mapping moments where stress spikes.",
+                "media": null
+            },
+            {
+                "heading": "Insights",
+                "body": "Micro-celebrations and environmental cues prompted positive behavior shifts more than verbal nudges.",
+                "media": null
+            },
+            {
+                "heading": "Design Process",
+                "body": "Iterated on haptic feedback patterns and motion studies to keep the companion delightful.",
+                "media": null
+            },
+            {
+                "heading": "Final Solution",
+                "body": "Crafted a web-based prototype demonstrating the companion's ambient rituals.",
+                "media": null
+            }
+        ],
+        "reflection": "Experimented with motion storytelling to articulate emotion across screens and physical space."
+    },
+    {
+        "slug": "research-library",
+        "title": "Designing a Research Library",
+        "role": "UX Researcher",
+        "year": "2022",
+        "summary": "A digital library that translates dense research artefacts into approachable narratives for NGOs.",
+        "problem": "Community partners struggled to access and reuse past research learnings.",
+        "timeline": "8 weeks",
+        "team": "Researcher, archivist, front-end developer",
+        "deliverables": "Information architecture, storytelling framework, high-fidelity prototype",
+        "sections": [
+            {
+                "heading": "Problem",
+                "body": "Qualitative insights were trapped in PDFs, making reuse impossible for facilitators.",
+                "media": null
+            },
+            {
+                "heading": "Process",
+                "body": "Co-created scenario cards and guided filters with facilitators to encourage reuse.",
+                "media": null
+            },
+            {
+                "heading": "Outcome",
+                "body": "Delivered a searchable, narrative-led library with a content reuse playbook.",
+                "media": null
+            }
+        ],
+        "reflection": "Reframing research documentation as living stories improved retention across stakeholders."
+    }
+]

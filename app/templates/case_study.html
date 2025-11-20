@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ case.title }} · Case Study{% endblock %}
+{% block content %}
+<article class="case-study">
+    <header class="case-header">
+        <p class="meta">{{ case.role }} · {{ case.year }}</p>
+        <h1>{{ case.title }}</h1>
+        <p class="summary">{{ case.summary }}</p>
+        <ul class="quick-facts">
+            <li><strong>Role:</strong> {{ case.role }}</li>
+            <li><strong>Timeline:</strong> {{ case.timeline }}</li>
+            <li><strong>Team:</strong> {{ case.team }}</li>
+            <li><strong>Deliverables:</strong> {{ case.deliverables }}</li>
+        </ul>
+    </header>
+    {% for section in case.sections %}
+    <section class="case-section">
+        <h2>{{ section.heading }}</h2>
+        <p>{{ section.body }}</p>
+        {% if section.media %}
+        <figure>
+            <img src="{{ section.media.src }}" alt="{{ section.media.alt }}">
+            {% if section.media.caption %}
+            <figcaption>{{ section.media.caption }}</figcaption>
+            {% endif %}
+        </figure>
+        {% endif %}
+    </section>
+    {% endfor %}
+    <section class="case-reflection">
+        <h2>Reflection</h2>
+        <p>{{ case.reflection }}</p>
+    </section>
+</article>
+{% endblock %}

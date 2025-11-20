@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Anoushka Rathod · Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="noir">
+    <div class="page-shell">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <nav class="nav-shell">
+                <a class="brand" href="/">Anoushka Rathod</a>
+                <ul class="nav-links">
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/experience">Experience</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <a class="resume-pill" href="/static/docs/anoushka-rathod-resume.pdf" target="_blank">Resume</a>
+            </nav>
+        </header>
+        <main id="main" class="page">{% block content %}{% endblock %}</main>
+        <footer class="site-footer">
+            <p>© 2025 Anoushka Rathod. Crafted with care.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', path='js/hero-animation.js') }}" defer></script>
+</body>
+</html>

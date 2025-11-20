@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Home · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <p class="hero-kicker">Interaction & UX Designer</p>
+        <h1 class="hero-title">I design thoughtful digital experiences that make complex systems feel human.</h1>
+        <p class="hero-subtitle">I blend research, storytelling, and playful prototyping to turn messy problems into clarity.</p>
+    </div>
+    <div class="hero-cursor hero-cursor--green" data-speed="1.1" style="top: 40%; left: 38%;"></div>
+    <div class="hero-cursor hero-cursor--yellow" data-speed="1.3" style="top: 46%; right: 34%; animation-delay: 3s;"></div>
+    <div class="hero-cursor hero-cursor--purple" data-speed="0.9" style="bottom: 18%; left: 36%; animation-delay: 6s;"></div>
+    <div class="hero-cursor hero-cursor--orange" data-speed="1.4" style="bottom: 20%; right: 26%; animation-delay: 9s;"></div>
+    <div class="hero-cursor-label" id="hero-label">Can you make it pop?</div>
+</section>
+<section class="featured" id="work">
+    <header class="section-header">
+        <h2>Flagship case studies</h2>
+        <p>A glimpse into how I research, co-create, and iterate.</p>
+    </header>
+    <div class="cards-grid cards-grid--feature">
+        {% for case in case_studies %}
+        <article class="card case-card card--feature">
+            <a href="/work/{{ case.slug }}">
+                <div class="card-accent" aria-hidden="true">
+                    <span class="card-accent-triangle"></span>
+                </div>
+                <h3 class="card-title">{{ case.title }}</h3>
+                <p class="meta card-meta">{{ case.role }} · {{ case.year }}</p>
+                <p class="card-body">{{ case.summary }}</p>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+<section class="currently">
+    <header class="section-header">
+        <h2>Currently</h2>
+        <p>What I am learning, building, and exploring this month.</p>
+    </header>
+    <div class="strip">
+        <p>Experimenting with ambient inputs in wellness apps • Documenting a civic tech case study • Co-hosting a design critique circle</p>
+    </div>
+</section>
+<section class="experience-pane" id="experience">
+    <header class="section-header">
+        <h2>Recent experience</h2>
+        <p>Highlights from internships, collaborations, and competitions.</p>
+    </header>
+    <ul class="timeline">
+        {% for entry in experience %}
+        <li>
+            <span class="timeline-year">{{ entry.year }}</span>
+            <div class="timeline-body experience-card">
+                <h3 class="card-title">{{ entry.role }} — {{ entry.place }}</h3>
+                <p class="card-body">{{ entry.takeaway }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<section class="experiments" id="playground">
+    <header class="section-header">
+        <h2>Playground</h2>
+        <p>Quick experiments in motion, micro-interactions, and systems.</p>
+    </header>
+    <section class="neo-stage neo-stage--playground">
+        <div class="neo-grid">
+            {% for item in experiments %}
+            <article class="neo-card neo-card--compact">
+                <div class="neo-card-art neo-card-art--mini" aria-hidden="true">
+                    <div class="neo-card-triangle neo-card-triangle--mini"></div>
+                </div>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+                {% if item.link %}
+                <a class="neo-card-link" href="{{ item.link }}" target="_blank" rel="noopener">View experiment</a>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+</section>
+{% endblock %}

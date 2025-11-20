@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Playground · Anoushka Rathod{% endblock %}
+{% block content %}
+<section class="page-header">
+    <h1>Playground</h1>
+    <p>Small explorations in motion, prototyping, and visual studies.</p>
+</section>
+<section class="tiles">
+    {% for item in experiments %}
+    <article class="tile">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        {% if item.link %}
+        <a class="inline-link" href="{{ item.link }}" target="_blank" rel="noopener">View experiment</a>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}
